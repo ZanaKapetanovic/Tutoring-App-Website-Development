@@ -1,0 +1,87 @@
+#works  {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    
+}
+
+.stepsTitle {
+    margin: 1rem 0;
+    font-size:4rem;
+
+}
+
+.stepsDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+
+}
+.stepsImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100vw;
+    max-width: 65rem;
+    padding-top: 1.5rem;
+
+
+}
+.worksImgContainer {
+    position: relative;
+    overflow: hidden;
+    width: 17rem; /* Adjust the width to match the image width */
+    height: 20rem; /* Adjust the height to match the image height */
+    border-radius: 5px;
+    margin: 0.75rem;
+  }
+  
+  .worksImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .worksImgContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 22, 22, 0.914); /* Set the color you desire for the overlay */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+  }
+  
+  .worksImgContainer:hover::before {
+    opacity: 1;
+  }
+  
+  .worksImgContainer:hover .imgText {
+    opacity: 5;
+  }
+  
+  .imgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
