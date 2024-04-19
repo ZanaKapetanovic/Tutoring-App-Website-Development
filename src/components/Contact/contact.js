@@ -6,7 +6,7 @@ import radford from '../../assets/radford.png';
 import facebook from '../../assets/facebook.png';
 import instagram from '../../assets/instagram.png';
 import twitter from '../../assets/twitter.png';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
